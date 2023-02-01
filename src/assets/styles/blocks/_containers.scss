@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.container_content {
+  width: 1160px;
+  @media screen and (max-width: $desktop) {
+    width: calc(100% - 60px);
+  }
+  @media screen and (max-width: $tablet) {
+    width: calc(100% - 40px);
+  }
+  @media screen and (max-width: $mobile) {
+    width: calc(100% - 20px);
+  }
+}
+
+.card {
+  background-color: $light-dark-green;
+  border-radius: 15px;
+  padding: 10px;
+}
+.button {
+  // height: 50px;
+  padding: 15px;
+  background-color: $mid-green;
+  border: none;
+  font-family: $common-text;
+  color: $dark-green;
+  cursor: pointer;
+}
+.player__btn {
+  border-radius: 15px;
+  // box-shadow: 10px 10px 10px ;
+  &:hover {
+    background-color: $success-hover-color;
+    color: $white;
+  }
+  &:active {
+    background-color: $success-pressed-color;
+  }
+}

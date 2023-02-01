@@ -1,0 +1,46 @@
+.answer__correct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 0.5fr 0.5fr 1fr 3fr;
+
+  gap: 15px;
+  grid-template-areas:
+    "img ansname"
+    "img species"
+    "img player"
+    "img description";
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img "
+      "ansname"
+      " species"
+      " player"
+      " description";
+  }
+}
+
+.answer__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  grid-area: img;
+  border-radius: 15px;
+}
+.answer__name {
+  grid-area: ansname;
+}
+
+.answer__species {
+  grid-area: species;
+}
+.player {
+  grid-area: player;
+}
+
+.answer__description {
+  grid-area: description;
+}
+.answer__hide {
+  display: none;
+}

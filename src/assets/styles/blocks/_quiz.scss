@@ -1,0 +1,32 @@
+.quis__answers {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  height: 90%;
+  list-style: circle inside none;
+  padding: 0;
+}
+.quis__answer {
+  cursor: pointer;
+  // border: 1px $mid-green solid;
+
+  transition: all 0.3s ease-in-out;
+  // width: 100%;
+  &:hover {
+    background-color: $mid-green;
+    border-radius: 15px;
+    // border: 1px $gray solid;
+  }
+}
+.quis__answer_wrong {
+  color: $failure-color;
+  background-color: $mid-green;
+  border-radius: 15px;
+  border: 1px $gray solid;
+}
+.quis__answer_correct {
+  color: $success-color;
+  background-color: $mid-green;
+  border-radius: 15px;
+  border: 1px $gray solid;
+}

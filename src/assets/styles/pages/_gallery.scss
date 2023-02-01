@@ -1,0 +1,132 @@
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.gallery {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: 700px;
+  @media (max-width: $desktop) {
+    width: 80%;
+  }
+  @media (max-width: $mobile) {
+    margin-top: 2rem;
+    width: 60%;
+  }
+}
+
+.gallery__container {
+  // display: grid;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  position: relative;
+
+  // grid-template-columns: 1fr;
+  // grid-template-rows: 1fr;
+  // grid-auto-rows: 0;
+}
+.gallery__wrapper.active,
+.gallery__wrapper.next {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 0;
+  gap: 15px;
+  overflow: hidden;
+  flex: 0 0 auto;
+
+  // @media (max-width: $desktop) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.gallery__wrapper {
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+.gallery {
+  .answer__img {
+    @media (max-width: $tablet) {
+      height: 200px;
+    }
+  }
+  .player__sound {
+    @media (max-width: $tablet) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // position: relative;
+}
+
+.gallery__btn {
+  position: absolute;
+  background-color: $light-dark-green;
+}
+.gallery__btn_r {
+  top: 50%;
+  left: -4rem;
+}
+.gallery__btn_l {
+  top: 50%;
+  right: -4rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.to-left {
+  animation: 1s ease-in-out;
+  animation-name: left;
+}
+
+.to-right {
+  animation: 1s ease-in-out;
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation: 1s ease-in-out;
+  animation-name: left;
+  animation-direction: reverse;
+}
+.from-right {
+  animation: 1s ease-in-out;
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -104%;
+  }
+}
+@keyframes right {
+  from {
+    left: 104%;
+  }
+  to {
+    left: 0%;
+  }
+}

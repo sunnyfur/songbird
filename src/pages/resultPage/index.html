@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SongBird</title>
+  <link rel="shortcut icon" href="../../assets/svg/bird.svg">
+</head>
+
+<body class="body container">
+  <header class="container_content header">
+
+    <p class="logo__text">SongBird</p>
+    <nav>
+      <ul class="nav">
+        <li><a class="nav__link " href="index.html">Start page</a></li>
+        <li><a class="nav__link actve_link" href="game.html">Game</a></li>
+        <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="lang">
+      <input type="checkbox" id="idChangeLang" class="lang__input" checked>
+      <label for="idChangeLang" class="lang__label">RU EN</label>
+    </div>
+
+  </header>
+
+  <main class="container_content main__wrapper">
+    <div class="ellipse"></div>
+
+    <div class="game__wrapper">
+      <div class="card card_result">
+        <div class="card__wrapper card_win">
+          <h1 class="text_congrats">Поздравляем!</h1>
+          <h2 class="text_congrats2">Вы выиграли!</h2>
+          <!-- <p>Ваш результат: <span>10</span></p> -->
+        </div>
+        <div class="card__wrapper card_loose card_hide">
+          <div class="score__wrapper">
+            <h1 class="text_congrats">Ваш результат: </h1>
+            <p class="text_congrats score_result">10</p>
+          </div>
+
+          <button class="button player__btn button__result text_congrats2">Начать заново</button>
+
+        </div>
+        <video class="bg__video" src="../../assets/video/Robin.mp4" autoplay loop muted></video>
+
+      </div>
+
+      <div class="bird"></div>
+  </main>
+  <footer class="container_content footer">
+    <a class="link_git" href="https://github.com/sunnyfur" target="_blank"><img
+        src="../../assets/img/GitHub-Mark-64px.png" alt="git" class="logo_git">
+      <span>sunnyfur</span>
+    </a>
+    <a href="https://rs.school/js/" target="_blank" class="link_rs">
+      <img src="../../assets/svg/rs_school_js.svg" alt="rs-school-logo" class="logo_rs" />
+    </a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.game__wrapper {
+  position: inherit;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  // grid-template-rows: 0.5fr 1fr 2fr 6fr 0.5fr;
+  gap: 0.8rem;
+  width: 100%;
+  grid-template-areas:
+    ". score"
+    "menu menu"
+    "question question"
+    "quiz answer"
+    "next next";
+  @media (max-width: $tablet) {
+    grid-template-areas:
+      ". score"
+      "menu menu"
+      "question question"
+      "quiz quiz"
+      "answer answer"
+      "next next";
+  }
+}
+.score__wrapper {
+  grid-area: score;
+  justify-self: flex-end;
+}
+
+.menu {
+  display: flex;
+  grid-area: menu;
+  border-radius: 20px;
+  overflow: hidden;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+.question {
+  grid-area: question;
+}
+.quiz {
+  grid-area: quiz;
+}
+
+.answer {
+  grid-area: answer;
+}
+
+.button_next {
+  grid-area: next;
+  background-color: $success-hover-color;
+  border-radius: 20px;
+  color: $dark-green;
+  &:hover {
+    background-color: $success-color;
+    color: $white;
+  }
+  &:active {
+    background-color: $success-pressed-color;
+  }
+  &:disabled {
+    background-color: $gray;
+
+    &:hover {
+      background-color: $gray;
+      color: $dark-green;
+    }
+  }
+}
+
+.menu__label {
+  flex: 1 1 auto;
+}
+.menu__input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.menu__input:checked + .menu__label {
+  background-color: $success-hover-color;
+}
+.menu__input.active + .menu__label {
+  background-color: $light-dark-green;
+}

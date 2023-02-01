@@ -1,0 +1,31 @@
+// .card_result {
+//   // width: 100%;
+//   // height: 100%;
+//   // align-self: center;
+//   // justify-self: center;
+// }
+.game__wrapper {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.card_result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 3;
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.card_hide {
+  display: none;
+}

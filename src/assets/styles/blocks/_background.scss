@@ -1,0 +1,50 @@
+.bg__video {
+  width: 50%;
+  object-fit: cover;
+
+  border-radius: 50px;
+  box-shadow: -15px -14px 29px 10px $mid-green;
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.bird {
+  background-image: url("../../assets/svg/bird.svg");
+
+  position: absolute;
+  background-size: cover;
+  bottom: 12vh;
+  right: 10vw;
+  width: 142px;
+  height: 130px;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+.body {
+  background: $mid-green;
+  min-height: 100vh;
+}
+
+.ellipse {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  left: -60%;
+  top: -60%;
+  border-radius: 50%;
+  z-index: -12;
+
+  /* mid-green */
+
+  background: $light-green;
+}
+
+.main__wrapper {
+  display: flex;
+  gap: 30px;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mainMenu": {
+    "en": ["Start page", "Game", "Gallery"],
+    "ru": ["Стартовая страница", "Игра", "Галерея"]
+  },
+  "startText": {
+    "en": "It’s a quiz app to recognize birds by their voices",
+    "ru": "Это приложение по распознаванию голосов птиц"
+  },
+  "nextBtn": {
+    "en": "Next level",
+    "ru": "Следующий уровень"
+  },
+  "score": {
+    "en": "Score:",
+    "ru": "Счет:"
+  },
+  "answerAdvise": {
+    "en": ["Listen to the player", "Choose a bird from the list"],
+    "ru": ["Послушайте плеер", "Выберите птицу из списка"]
+  },
+  "resultHeaderWin": { "en": "Congratulations!", "ru": "Поздравляем!" },
+  "resultWin": { "en": "You win!", "ru": "Вы выиграли!" },
+  "resultHeaderLoose": { "en": "Your score: ", "ru": "Ваш результат:" },
+  "btnPlay": { "en": "Play again", "ru": "Начать заново" }
+}
