@@ -1,7 +1,7 @@
 {
-  "name": "sunnyfur-jsfe2022q3",
+  "name": "songbird",
   "version": "1.0.0",
-  "description": "Private repository for @sunnyfur",
+  "description": "Quiz game birds singing",
   "main": "index.js",
   "scripts": {
     "build": "set NODE_ENV=production&&webpack",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rolling-scopes-school/sunnyfur-JSFE2022Q3.git"
+    "url": "git+https://github.com/sunnyfur/songbird.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rolling-scopes-school/sunnyfur-JSFE2022Q3/issues"
+    "url": "https://github.com/sunnyfur/songbird/issues"
   },
-  "homepage": "https://github.com/rolling-scopes-school/sunnyfur-JSFE2022Q3#readme",
+  "homepage": "https://github.com/sunnyfur/songbird",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
